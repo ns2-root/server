@@ -30,14 +30,14 @@ func main() {
 			os.Exit(1)
 		}
 		service := os.Args[2]
-		DNS(&service)
+		dns(&service)
 	default:
 		fmt.Println("Invalid command. Use start, stop, restart, status, or dns <service>.")
 		os.Exit(1)
 	}
 }
 
-func DNS(service *string) {
+func dns(service *string) {
 	// A kaydı kontrolü yapılır, sonuç alınır
 	iprecords, err := net.LookupIP(*service)
 	if err != nil {
