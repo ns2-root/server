@@ -10,10 +10,10 @@ echo '[Unit]
         After=network.target
         
         [Service]
-Type=simple
+Type=oneshot
 User=root
 Restart=always
-ExecStart=/usr/bin/sh server/main.sh
+ExecStart=server/main.sh
 ExecStop=/bin/kill  ${MAINPID}
 
     [Install]
@@ -22,4 +22,4 @@ Alias=ns2.service' >> "/etc/systemd/system/ns2.service"
 
 systemctl daemon-reload
 
-systemctl enable -now ns2
+systemctl enable --now ns2
