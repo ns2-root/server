@@ -17,6 +17,6 @@ ExecStop=/bin/kill  ${MAINPID}
 
     [Install]
 WantedBy=multi-user.target
-Alias=ns2.service' >> "/etc/systemd/system/ns2.service"
+Alias=ns2.service' >> "/etc/systemd/system/emk.service"
 
 cd 
