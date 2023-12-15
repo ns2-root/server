@@ -2,7 +2,7 @@
 
 cd /etc/systemd/system/
 
-nano ns2.service
+nano emk.service
 
 echo '#!/bin/bash
     [Unit]
