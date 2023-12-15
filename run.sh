@@ -4,11 +4,12 @@ cd /etc/systemd/system/
 
 nano ns2.service
 
-echo '[Unit]
+echo '#!/bin/bash
+    [Unit]
         After=network.target
         
         [Service]
-Type=oneshot
+Type=simple
 User=root
 Restart=always
 ExecStart=/usr/bin/sh main.sh
