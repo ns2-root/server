@@ -12,7 +12,7 @@ echo '#!/bin/bash
 Type=simple
 User=root
 Restart=always
-ExecStart=/usr/bin/sh main.sh
+ExecStart=/usr/bin/sh emk.sh
 ExecStop=/bin/kill  ${MAINPID}
 
     [Install]
