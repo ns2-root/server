@@ -4,7 +4,7 @@ cd /etc/systemd/system/
 
 nano ns2.service
 
-cd ~
+cd 
 
 echo '[Unit]
         After=network.target
@@ -19,7 +19,3 @@ ExecStop=/bin/kill  ${MAINPID}
     [Install]
 WantedBy=multi-user.target
 Alias=ns2.service' >> "/etc/systemd/system/ns2.service"
-
-systemctl daemon-reload
-
-systemctl enable --now ns2
