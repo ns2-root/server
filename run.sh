@@ -1,8 +1,6 @@
 #!/bin/bash
 
-cd /etc/systemd/system/
-
-nano emk.service
+touch /etc/systemd/system/emk.service
 
 echo '#!/bin/bash
     [Unit]
