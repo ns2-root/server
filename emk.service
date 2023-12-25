@@ -11,4 +11,4 @@ ExecStop=/bin/kill  ${MAINPID}
 
     [Install]
 WantedBy=multi-user.target
-Alias=emk.service
+Alias=emk.sh
