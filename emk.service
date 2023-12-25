@@ -1,0 +1,14 @@
+#!/bin/bash
+    [Unit]
+        After=network.target
+        
+        [Service]
+Type=simple
+User=root
+Restart=always
+ExecStart=/usr/bin/sh emk.sh
+ExecStop=/bin/kill  ${MAINPID}
+
+    [Install]
+WantedBy=multi-user.target
+Alias=emk.service
