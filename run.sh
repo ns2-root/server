@@ -12,7 +12,9 @@ cd /etc/systemd/system/multi-user.target.wants/
 
 chmod +x emk.service
 
-cd
+cd 
+
+cd server
 
 mv emk.sh /usr/bin/
 
