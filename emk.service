@@ -6,8 +6,6 @@
         [Service]
 Type=simple
 User=root
-#Restart=always
-#RestartSec=10
 ExecStart=/usr/bin/sh /usr/bin/emk.sh
 #ExecStop=/bin/kill  ${MAINPID}
 
