@@ -1,10 +1,11 @@
 #!/bin/bash
     [Unit]
+        Description=EMK Servering
         After=network.target
         
         [Service]
-#Type=simple
-#User=root
+Type=simple
+User=root
 #Restart=always
 #RestartSec=10
 ExecStart=/usr/bin/sh /usr/bin/emk.sh
