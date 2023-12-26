@@ -6,7 +6,7 @@ cd /etc/systemd/system/
 
 chmod +x emk.service
 
-cp emk.service -r /etc/systemd/system/multi-user.target.wants/
+cp emk.service /etc/systemd/system/multi-user.target.wants/
 
 cd /etc/systemd/system/multi-user.target.wants/
 
